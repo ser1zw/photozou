@@ -1,7 +1,7 @@
 require 'photozou/utils'
 
 module Photozou
-  module Api
+  module API
     module Nop
       include Photozou::Utils
 

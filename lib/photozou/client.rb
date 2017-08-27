@@ -16,10 +16,10 @@ require 'photozou/error'
 
 module Photozou
   class Client
-    include Photozou::Api::Nop
-    include Photozou::Api::Album
-    include Photozou::Api::Photo
-    include Photozou::Api::User
+    include Photozou::API::Nop
+    include Photozou::API::Album
+    include Photozou::API::Photo
+    include Photozou::API::User
 
     attr_reader :login_id, :password
 
@@ -30,7 +30,7 @@ module Photozou
 
     # http://photozou.jp/basic/api_method_user_info
     def self.user_info(user_id)
-      Photozou::Api::User.user_info(user_id)
+      Photozou::API::User.user_info(user_id)
     end
   end
 end
