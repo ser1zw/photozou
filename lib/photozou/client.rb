@@ -6,12 +6,14 @@ require 'photozou/api/nop'
 require 'photozou/api/album'
 require 'photozou/api/photo'
 require 'photozou/api/user'
+require 'photozou/api/group'
 
 require 'photozou/utils'
 require 'photozou/info'
 require 'photozou/album'
 require 'photozou/photo'
 require 'photozou/user'
+require 'photozou/group'
 require 'photozou/error'
 
 module Photozou
@@ -20,6 +22,7 @@ module Photozou
     include Photozou::API::Album
     include Photozou::API::Photo
     include Photozou::API::User
+    include Photozou::API::Group
 
     attr_reader :login_id, :password
 
